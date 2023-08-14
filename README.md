@@ -51,8 +51,6 @@ cd MarsKaseiCoinCrowdsale
 
 - **Screenshots**:
   - `Resources/Contract_Deployment.png`: A screenshot showcasing the successful deployment of the contracts.
-  - `Resources/Token_Transaction.png`: A screenshot depicting a successful transaction of KaseiCoins.
-  - `Resources/Crowdsale_Contribution.png`: An image showcasing a successful ether contribution to the crowdsale and the corresponding KaseiCoin allocation.
   
 - **Videos**:
   - `Resources/Contract_Deployment_Demo.mp4`: A video demonstration of deploying the contracts onto the local blockchain.
