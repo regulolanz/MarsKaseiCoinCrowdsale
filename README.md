@@ -18,11 +18,6 @@ cd MarsKaseiCoinCrowdsale
 ```
 
 3. **Install Dependencies:**
-   - **Node.js and NPM**: Ensure you have [Node.js](https://nodejs.org/) installed. NPM will be included in the installation.
-   - **Truffle Suite**: Install the Truffle development environment using NPM:
-     ```bash
-     npm install -g truffle
-     ```
    - **Ganache**: Download and install [Ganache](https://www.trufflesuite.com/ganache) for a personal Ethereum blockchain.
    - **MetaMask**: Download and install the [MetaMask](https://metamask.io/) browser extension for accessing Ethereum enabled applications in your browser.
 
@@ -31,7 +26,24 @@ cd MarsKaseiCoinCrowdsale
 - `KaseiCoinCrowdsale.sol`: This contract manages the crowdsale for KaseiCoin, allowing users to send ether and receive KaseiCoin tokens in return.
 
 ### Deployment:
-Follow the instructions provided in the assignment to deploy the contracts onto a local blockchain using tools like Remix, MetaMask, and Ganache.
+1. **Setting up your Local Blockchain with Ganache:**
+    - Launch Ganache.
+    - You should see 10 test accounts with 100 ETH in each.
+    - Take note of the mnemonic phrase provided. This will be used to connect MetaMask to your local blockchain.
+
+2. **Configuring MetaMask:**
+    - Open MetaMask in your browser.
+    - Click on the network dropdown (typically shows "Main Ethereum Network").
+    - Select "Custom RPC" and enter the details of your Ganache instance (usually `HTTP://127.0.0.1:7545`).
+    - Import an account using the private key from one of your Ganache's test Ethereum accounts.
+
+3. **Deploying with Remix:**
+    - Open [Remix](https://remix.ethereum.org/) in your browser.
+    - Import the `KaseiCoin.sol` and `KaseiCoinCrowdsale.sol` contracts.
+    - Compile both contracts.
+    - Change the environment in the Remix `Deploy & Run Transactions` tab to `Injected Web3`. This allows Remix to connect to your MetaMask.
+    - Deploy the `KaseiCoin.sol` contract first.
+    - After successfully deploying the KaseiCoin contract, deploy the `KaseiCoinCrowdsale.sol` contract. 
 
 ### Evaluation Evidence:
 
